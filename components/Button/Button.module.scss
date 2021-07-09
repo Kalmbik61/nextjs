@@ -1,0 +1,63 @@
+@import '../../styles/variables';
+
+.button {
+    display: inline-block;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+
+    transition: all ease-in 0.2s;
+
+    & svg {
+        fill: $white;
+        transition: all ease-in 0.2s;
+    }
+}
+
+.primary {
+    color: $white;
+    background-color: $primary;
+
+    & svg {
+        fill: $white;
+    }
+
+    &:hover {
+        background-color: $primary-hover;
+    }
+}
+
+.ghost {
+    color: $black;
+    background: none;
+    border: 1px solid #d8d8d8;
+
+    & svg {
+        fill: $black;
+    }
+
+    &:hover {
+        color: $white;
+        background-color: $primary;
+
+        & svg {
+            fill: $white;
+        }
+    }
+}
+
+.arrow {
+    display: inline-block;
+    margin-left: 10px;
+    transition: all ease-in 0.2s;
+}
+
+.down {
+    transform: rotate(90deg);
+}
